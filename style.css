@@ -154,4 +154,24 @@ body {
   .cards {
     max-width: 60%;
   }
+  .master-card_btn {
+    justify-content: space-between;
+  }
+  .funding-card-info {
+    display: flex;
+  }
+  .funding-info {
+    display: flex;
+  }
+  .line {
+    width: 1px;
+    height: 62px;
+    margin: 10px 20px;
+  }
+  .small-card-heading,
+  .small-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
