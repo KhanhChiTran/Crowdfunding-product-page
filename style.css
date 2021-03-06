@@ -4,6 +4,16 @@ body {
   box-sizing: border-box;
   font-family: "Commissioner", sans-serif;
 }
+.wrap::after {
+  content: "";
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .header-section {
   background-image: url(./images/image-hero-mobile.jpg);
   height: 100vh;
@@ -16,6 +26,50 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 9% 6%;
+}
+.header-menu {
+  display: none;
+}
+.header-menu a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.burger-menu {
+  z-index: 10;
+}
+#myCheckbox {
+  appearance: none;
+}
+.fold-out-menu {
+  position: absolute;
+  right: -500px;
+}
+.menu-list {
+  width: 400px;
+  height: 100%;
+  background-color: white;
+  padding: 0;
+  border-radius: 10px;
+}
+.menu-list li {
+  list-style: none;
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
+}
+.menu-list li:nth-child(3) {
+  border-bottom: none;
+}
+.menu-list li a {
+  padding: 37px;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+#myCheckbox:checked ~ .fold-out-menu {
+  right: 40px;
+  z-index: 100;
 }
 .cards {
   display: block;
@@ -150,6 +204,12 @@ body {
   }
   .header {
     padding: 3%;
+  }
+  .header-menu {
+    display: block;
+  }
+  .burger-menu img {
+    display: none;
   }
   .cards {
     max-width: 60%;
