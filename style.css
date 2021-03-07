@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   font-family: "Commissioner", sans-serif;
 }
-.wrap::after {
+#modal {
   content: "";
   position: fixed;
   z-index: 2;
@@ -13,6 +13,7 @@ body {
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 .header-section {
   background-image: url(./images/image-hero-mobile.jpg);
@@ -27,6 +28,9 @@ body {
   justify-content: space-between;
   padding: 9% 6%;
 }
+.logo {
+  z-index: 200;
+}
 .header-menu {
   display: none;
 }
@@ -36,41 +40,38 @@ body {
   margin-right: 10px;
 }
 .burger-menu {
-  z-index: 10;
+  z-index: 2;
 }
-#myCheckbox {
-  appearance: none;
-}
-.fold-out-menu {
+#fold-out-menu {
   position: absolute;
-  right: -500px;
-}
-.menu-list {
-  width: 400px;
-  height: 100%;
+  left: 10%;
+  top: 10%;
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  /* padding: 30px 0; */
   background-color: white;
-  padding: 0;
   border-radius: 10px;
+  z-index: 100;
 }
-.menu-list li {
-  list-style: none;
-  padding: 30px 0;
-  border-bottom: 1px solid #ccc;
-}
-.menu-list li:nth-child(3) {
+#fold-out-menu a:nth-child(3) {
   border-bottom: none;
 }
-.menu-list li a {
-  padding: 37px;
+#fold-out-menu a {
+  border-bottom: 1px solid #ccc;
+  padding: 27px;
+  display: block;
   color: black;
   font-weight: 500;
   font-size: 20px;
   text-decoration: none;
 }
-#myCheckbox:checked ~ .fold-out-menu {
-  right: 40px;
-  z-index: 100;
+#close {
+  display: none;
 }
+/* #myCheckbox:checked ~ .fold-out-menu {
+  display: block;
+} */
 .cards {
   display: block;
   position: absolute;
