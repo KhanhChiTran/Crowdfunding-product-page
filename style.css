@@ -66,6 +66,10 @@ body {
   font-size: 20px;
   text-decoration: none;
 }
+#fold-out-menu a:hover {
+  color: white;
+  background-color: hsl(174, 86%, 45%);
+}
 #close {
   display: none;
 }
@@ -73,7 +77,7 @@ body {
   display: block;
 } */
 .cards {
-  display: block;
+  display: block; /*add modal*/
   position: absolute;
   top: 28%;
   left: 50%;
@@ -196,6 +200,39 @@ body {
 .select-btn.deactived {
   color: white;
   background-color: #ccc;
+}
+.modal-back {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 70%;
+  padding: 15px 20px;
+  border: 1px solid rgba(247, 245, 245, 0.822);
+  background-color: white;
+  border-radius: 10px;
+  display: none;
+  z-index: 1000;
+}
+.modal-header {
+  margin-bottom: 30px;
+}
+.modal-close {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.small-card-modal-heading {
+  display: flex;
+  align-items: center;
+}
+.modal-checkbox {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-right: 16px;
 }
 @media (min-width: 550px) {
   .header-section {

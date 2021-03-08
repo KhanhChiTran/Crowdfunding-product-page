@@ -31,9 +31,19 @@ closeMenu.onclick = () => {
     checkbox.style.display = "block";
   }
 };
-burgerMenu.onclick = () => {
-  //   overlay.style.display = "block";
+const modalLayout = document.querySelector(".modal-back");
+const backThisProject = document.querySelector(".back-btn");
+const mainCards = document.querySelector(".cards");
+backThisProject.onclick = () => {
+  mainCards.style.display = "none";
+  modal.style.display = "block";
+  modalLayout.style.display = "block";
+
   //   state = !state;
+};
+const modalCheckbox = document.querySelector(".modal-checkbox");
+modalCheckbox.onclick = () => {
+  modalCheckbox.style.background = "hsl(174, 86%, 45%)";
 };
 
 const bookmarkIcon = document.querySelector(".bookmark");
