@@ -233,6 +233,7 @@ body {
   border-radius: 50%;
   border: 1px solid #ccc;
   margin-right: 16px;
+  cursor: pointer;
 }
 @media (min-width: 550px) {
   .header-section {
