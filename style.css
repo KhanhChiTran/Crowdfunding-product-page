@@ -222,6 +222,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  cursor: pointer;
 }
 .small-card-modal-heading {
   display: flex;
@@ -235,6 +236,39 @@ body {
   margin-right: 16px;
   cursor: pointer;
 }
+.cta__card {
+  display: none;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+.cta__card-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.cta__card-buttons .amount {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-weight: 700;
+  color: #ccc;
+}
+.cta__card-buttons .amount span {
+  margin-left: 10px;
+  color: black;
+}
+.success-modal-card {
+  display: none;
+  position: absolute;
+  top: 20%;
+  z-index: 1000;
+}
+.success-btn {
+  width: 20%;
+  padding: 16px 34px;
+  margin: 0 auto;
+}
+
 @media (min-width: 550px) {
   .header-section {
     background-image: url(./images/image-hero-desktop.jpg);
