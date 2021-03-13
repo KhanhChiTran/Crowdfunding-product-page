@@ -43,27 +43,7 @@ body {
   z-index: 2;
 }
 .bookmark {
-  display: flex;
-  background-color: #ccc;
-  border-radius: 30px;
-  min-width: 30%;
-  max-width: 40%;
-}
-.bookmark-img {
-  margin-right: 10px;
-  cursor: pointer;
-  position: relative;
-}
-.bookmarked {
-  position: absolute;
-  top: 0;
-  width: 56px;
-  height: 56px;
-  background-color: rgba(204, 204, 204, 0.377);
-  border-radius: 50%;
-}
-.bookmark-text {
-  color: hsl(0, 0%, 48%);
+  display: none;
 }
 #fold-out-menu {
   position: absolute;
@@ -318,6 +298,29 @@ body {
   }
   .burger-menu img {
     display: none;
+  }
+  .bookmark {
+    display: flex;
+    background-color: #ccc;
+    border-radius: 30px;
+    min-width: 30%;
+    max-width: 40%;
+  }
+  .bookmark-img {
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  .bookmarked {
+    position: absolute;
+    top: 0;
+    width: 56px;
+    height: 56px;
+    background-color: rgba(204, 204, 204, 0.377);
+    border-radius: 50%;
+  }
+  .bookmark-text {
+    color: hsl(0, 0%, 48%);
   }
   .cards {
     max-width: 60%;

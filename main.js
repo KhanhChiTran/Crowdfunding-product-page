@@ -75,10 +75,6 @@ modalClose.onclick = () => {
   modal.style.display = "none";
   mainCards.style.display = "block";
 };
-const bookmarkIcon = document.querySelector(".bookmark");
-bookmarkIcon.onclick = () => {
-  console.log("clicking ....");
-};
 
 const modalBtn2 = document.querySelector(".modal-btn2");
 const ctaCard2 = document.querySelector(".cta__card2");
@@ -137,7 +133,7 @@ bookmarked.onclick = () => {
     bookmarkText.innerHTML = "Bookmarked";
     bookmarked.style.background = "hsl(174, 86%, 45%)";
   } else {
-    bookmarked.style.display = "none";
+    bookmarked.style.background = "rgba(204, 204, 204, 0.377)";
     bookmarkText.innerHTML = "Bookmark";
     bookmarkText.style.color = "hsl(0, 0%, 48%)";
   }
