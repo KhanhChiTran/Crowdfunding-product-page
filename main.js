@@ -123,3 +123,22 @@ successBtn.onclick = () => {
   successModalCard.style.display = "none";
   modal.style.display = "none";
 };
+
+const bookmarkBtn = document.querySelector(".bookmark-img");
+const bookmarkText = document.querySelector(".bookmark-text");
+const bookmarkWrap = document.querySelector(".bookmark");
+const bookmarked = document.querySelector(".bookmarked");
+let on = true;
+bookmarked.onclick = () => {
+  on = !on;
+  if (!on) {
+    bookmarkWrap.style.background = "rgb(238, 235, 235)";
+    bookmarkText.style.color = "hsl(174, 86%, 45%)";
+    bookmarkText.innerHTML = "Bookmarked";
+    bookmarked.style.background = "hsl(174, 86%, 45%)";
+  } else {
+    bookmarked.style.display = "none";
+    bookmarkText.innerHTML = "Bookmark";
+    bookmarkText.style.color = "hsl(0, 0%, 48%)";
+  }
+};
